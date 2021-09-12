@@ -29,7 +29,7 @@ int main() {
         std::cin >> choice; 
         
         if(!std::cin){
-            std::cout << "Only input integer\n"; 
+            std::cout << "Only input between numbers 1 to 3\n"; 
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
         } 
@@ -62,7 +62,7 @@ int main() {
                 break;  
             }
             default:{
-                std::cout << "That is not an option\n";
+                std::cout << "Input value was not an option\n1 to convert Celsius to Fahrenheit\n2 to convert Fahrenheit to Celsius\n3 to exit the program\n";
                 break;  
             }
         }
